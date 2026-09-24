@@ -40,8 +40,8 @@
     .button.secondary { color:var(--green); background:transparent; }
     .button.secondary:hover { color:var(--paper); }
     .hero-art { position:relative; min-height:355px; display:grid; place-items:center; }
-    .aperture-mark { position:relative; width:min(340px, 80vw); aspect-ratio:1; transform:rotate(-8deg); filter:drop-shadow(0 18px 22px #153b3020); }
-    .aperture-mark svg { display:block; width:100%; height:100%; }
+    .portrait { position:relative; width:min(340px, 80vw); aspect-ratio:1; overflow:hidden; border:8px solid var(--paper); border-radius:50%; box-shadow:0 18px 34px #153b3028; transform:rotate(-4deg); }
+    .portrait img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 42%; filter:grayscale(1); }
     .stamp { position:absolute; right:4%; bottom:12%; width:106px; aspect-ratio:1; border-radius:50%; display:grid; place-items:center; text-align:center; padding:12px; background:var(--orange); color:#fff8ea; font-size:10px; font-weight:700; line-height:1.4; letter-spacing:.12em; text-transform:uppercase; transform:rotate(9deg); }
     .section { padding:75px 0; border-top:1px solid var(--line); }
     .section-head { display:grid; grid-template-columns:.55fr 1.45fr; gap:24px; margin-bottom:38px; align-items:start; }
@@ -83,7 +83,7 @@
       nav { gap:13px; flex-wrap:wrap; justify-content:flex-end; font-size:10px; }
       .hero { grid-template-columns:1fr; padding:62px 0 48px; gap:8px; }
       .hero-art { min-height:275px; }
-      .aperture-mark { width:255px; }
+      .portrait { width:255px; }
       .stamp { right:10%; bottom:5%; }
       .section { padding:55px 0; }
       .section-head { grid-template-columns:40px 1fr; gap:12px; }
@@ -123,20 +123,7 @@
         </div>
       </div>
       <div class="hero-art" aria-hidden="true">
-        <div class="aperture-mark">
-          <svg viewBox="0 0 360 360" role="img" aria-label="Camera aperture">
-            <circle cx="180" cy="180" r="164" fill="#d9df75" />
-            <g stroke="#f5f0e5" stroke-width="4" stroke-linejoin="round">
-              <path d="M180 180 180 28 Q240 34 277 78 L210 180Z" fill="#234f42" />
-              <path d="M180 180 180 28 Q240 34 277 78 L210 180Z" fill="#315f4e" transform="rotate(60 180 180)" />
-              <path d="M180 180 180 28 Q240 34 277 78 L210 180Z" fill="#234f42" transform="rotate(120 180 180)" />
-              <path d="M180 180 180 28 Q240 34 277 78 L210 180Z" fill="#315f4e" transform="rotate(180 180 180)" />
-              <path d="M180 180 180 28 Q240 34 277 78 L210 180Z" fill="#234f42" transform="rotate(240 180 180)" />
-              <path d="M180 180 180 28 Q240 34 277 78 L210 180Z" fill="#315f4e" transform="rotate(300 180 180)" />
-            </g>
-            <circle cx="180" cy="180" r="47" fill="#f5f0e5" stroke="#d8a28d" stroke-width="4" />
-          </svg>
-        </div>
+        <div class="portrait"><img src="jeremy-moore-self-portrait.jpeg" alt="Jeremy Moore photographing himself with his camera"></div>
         <div class="stamp">Analog<br>to digital<br>and back</div>
       </div>
     </section>
