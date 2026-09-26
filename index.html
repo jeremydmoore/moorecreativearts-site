@@ -31,8 +31,9 @@
     .hero { min-height:550px; display:grid; grid-template-columns:1.15fr .85fr; align-items:center; gap:40px; padding:75px 0 82px; }
     .eyebrow { display:flex; align-items:center; gap:10px; color:var(--orange); font-size:11px; font-weight:700; letter-spacing:.17em; text-transform:uppercase; }
     .eyebrow:before { content:""; width:27px; height:1px; background:currentColor; }
-    h1 { max-width:700px; margin:22px 0; font:400 clamp(56px, 7.4vw, 96px)/.96 var(--serif); letter-spacing:-.055em; }
+    h1 { max-width:700px; margin:22px 0; font:400 clamp(44px, 5.6vw, 78px)/.98 var(--serif); letter-spacing:-.055em; }
     h1 em { color:var(--green); font-weight:400; }
+    h1 .brand-line { white-space:nowrap; }
     .intro { max-width:540px; color:var(--muted); font-size:17px; line-height:1.7; }
     .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
     .button { display:inline-block; padding:13px 18px; border:1px solid var(--green); color:var(--paper); background:var(--green); text-decoration:none; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; transition:.2s ease; }
@@ -115,7 +116,7 @@
     <section class="wrap hero" aria-labelledby="hero-title">
       <div>
         <div class="eyebrow">Photography · Digital craft · Denton, Texas</div>
-        <h1 id="hero-title">Images, ideas,<br><em>made with care.</em></h1>
+        <h1 id="hero-title">Because you <em>need</em><br><span class="brand-line">Moore Creative Arts.</span></h1>
         <p class="intro">I’m Jeremy Moore, a fine-art photographer, master printmaker, and creative technologist. Through Moore Creative Arts, I move between image making, cultural heritage digitization, software, and teaching.</p>
         <div class="hero-actions">
           <a class="button" href="#work">Explore selected work</a>
